@@ -11,7 +11,7 @@ const AuthenticationLight = () => {
   }, [navigate]);
 
   return (
-    <main className="w-[1440px] flex flex-row items-center justify-center py-2.5 px-0 box-border max-w-full text-left text-13xl text-gray-400 font-nunito">
+    <main className="w-[1440px] h-[750px] flex flex-row items-center justify-center py-2.5 px-0 box-border max-w-full text-left text-13xl text-gray-400 font-nunito">
       <div className="w-[579px] shadow-[-22px_151px_43px_rgba(0,_0,_0,_0),_-14px_97px_39px_rgba(0,_0,_0,_0.01),_-8px_54px_33px_rgba(0,_0,_0,_0.05),_-4px_24px_24px_rgba(0,_0,_0,_0.09),_-1px_6px_13px_rgba(0,_0,_0,_0.1)] rounded-11xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-start pt-0 px-10 pb-[35px] box-border relative gap-[50px] min-h-[745px] max-w-full mq675:gap-[25px]">
         <div className="self-stretch flex flex-col items-start justify-start gap-[8px]">
           <h1 className="m-0 self-stretch relative text-inherit font-semibold font-inherit mq450:text-lgi mq750:text-7xl">
@@ -111,8 +111,8 @@ const AuthenticationLight = () => {
               src="/line-2.svg"
             />
           </div>
-          <form className="m-0 self-stretch flex flex-col items-start justify-start gap-[55px] mq675:gap-[27px]">
-            <div className="self-stretch flex flex-col items-start justify-start gap-[30px]">
+          <form className="m-0 self-stretch flex flex-col items-start justify-start gap-[25px] mq675:gap-[27px]">
+            <div className="self-stretch flex flex-col items-start justify-start gap-[20px]">
               <InputFieldLight
                 label="Email Address"
                 placeholderPlaceholder="Your email address"

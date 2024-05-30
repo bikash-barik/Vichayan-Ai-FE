@@ -81,6 +81,12 @@ module.exports = {
       lg: {
         max: "1200px",
       },
+      ssm: '400px',
+      xsm: '450px',
+      sm: '640px',
+      md: '768px',
+      cu_tab: '769px',
+      xl: '1280px',
       mq1100: {
         raw: "screen and (max-width: 1100px)",
       },

@@ -13,10 +13,11 @@ const Root1 = ({ onClose }) => {
     <div className="w-[640px] rounded-6xl bg-white overflow-hidden flex flex-col items-end justify-center p-[30px] box-border gap-[40px] leading-[normal] tracking-[normal] max-w-full max-h-full mq320:gap-[20px]">
       <section className="self-stretch flex flex-col items-end justify-start max-w-full text-left text-xl text-gray-400 font-nunito">
         <img
-          className="w-6 h-6 relative overflow-hidden shrink-0"
+          className="w-6 h-6 cursor-pointer relative overflow-hidden shrink-0"
           loading="lazy"
           alt=""
           src="/magemultiply1.svg"
+          onClick={onClose}
         />
         <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[15px] max-w-full">
           <img
@@ -49,6 +50,7 @@ const Root1 = ({ onClose }) => {
             "&:hover": { borderColor: "#141414" },
             height: 52,
           }}
+          onClick={onClose}
         >
           Cancel
         </Button>

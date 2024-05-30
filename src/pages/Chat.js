@@ -346,11 +346,11 @@ const Chat = () => {
             </div>
           </div>
         </div>
-        <main className="flex-1 rounded-xl bg-linen overflow-hidden flex flex-col items-start justify-start pt-0 px-[30px] pb-[35px] box-border min-w-[1030px] max-w-full lg:min-w-full">
+        <main className="flex-1 w-full rounded-xl bg-linen overflow-hidden flex flex-col items-start justify-start pt-0 px-[30px] pb-[35px] box-border w-full max-w-full">
           <TitleContainer />
-          <section className="self-stretch flex flex-row items-start justify-center max-w-full">
+          <section className="flex mt-[2rem] w-full flex-row items-start justify-center max-w-full">
             <div className="w-[732px] flex flex-col items-start justify-start gap-[25px] max-w-full">
-              <div className="self-stretch h-[842px] overflow-y-auto shrink-0 flex flex-col items-start justify-start pt-[275px] px-0 pb-0 box-border gap-[70px] max-w-full lg:pt-[179px] lg:box-border mq750:h-auto mq750:gap-[35px] mq450:gap-[17px] mq450:pt-[75px] mq450:box-border mq1050:pt-[116px] mq1050:box-border">
+              <div className="h-[842px] mt-[1rem] w-full hide-scrollbar overflow-y-auto shrink-0 flex flex-col items-start justify-start pt-[275px] px-0 pb-0 box-border gap-[70px] max-w-full lg:pt-[179px] lg:box-border mq750:h-auto mq750:gap-[35px] mq450:gap-[17px] mq450:pt-[75px] mq450:box-border mq1050:pt-[116px] mq1050:box-border">
                 <ChatLight />
                 <ChatLight
                   propMarginTop="unset"

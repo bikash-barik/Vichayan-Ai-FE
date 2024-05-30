@@ -6,10 +6,11 @@ const Root = ({ onClose }) => {
     <div className="w-[744px] rounded-6xl bg-white overflow-hidden flex flex-col items-end justify-start p-[30px] box-border gap-[40px] leading-[normal] tracking-[normal] max-w-full max-h-full mq450:gap-[20px]">
       <section className="self-stretch flex flex-col items-end justify-start text-left text-5xl text-gray-400 font-nunito">
         <img
-          className="w-6 h-6 relative overflow-hidden shrink-0"
+          className="w-6 h-6 cursor-pointer relative overflow-hidden shrink-0"
           loading="lazy"
           alt=""
           src="/magemultiply1.svg"
+          onClick={onClose}
         />
         <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-0 gap-[16px]">
           <div className="self-stretch flex flex-col items-start justify-start py-0 pr-5 pl-0">

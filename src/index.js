@@ -12,21 +12,28 @@ import {
 
 import "./global.css";
 import 'tailwindcss/tailwind.css';
-
+import { ClerkProvider } from '@clerk/clerk-react';
+import { SidebarProvider } from "./context/SidebarContext";
 
 const muiTheme = createTheme();
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
+const VITE_CLERK_PUBLISHABLE_KEY = process.env.VITE_CLERK_PUBLISHABLE_KEY || 'pk_test_ZHJpdmluZy1kYW5lLTkuY2xlcmsuYWNjb3VudHMuZGV2JA';
+
 root.render(
   <BrowserRouter>
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={muiTheme}>
-        <CssBaseline />
-        <App />
-      </ThemeProvider>
-    </StyledEngineProvider>
+    <ClerkProvider publishableKey={VITE_CLERK_PUBLISHABLE_KEY}>
+    <SidebarProvider>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={muiTheme}>
+          <CssBaseline />
+          <App />
+        </ThemeProvider>
+      </StyledEngineProvider>
+      </SidebarProvider>
+    </ClerkProvider>
   </BrowserRouter>
 );
 

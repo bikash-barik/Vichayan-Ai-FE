@@ -6,9 +6,10 @@ const Root4 = ({ onClose }) => {
       <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-0 gap-[16px]">
         <div className="self-stretch flex flex-col items-end justify-start shrink-0">
           <img
-            className="w-6 h-6 relative overflow-hidden shrink-0"
+            className="w-6 h-6 cursor-pointer relative overflow-hidden shrink-0"
             alt=""
             src="/magemultiply1.svg"
+          onClick={onClose}
           />
           <b className="self-stretch relative mq450:text-lgi">
             Share this chat

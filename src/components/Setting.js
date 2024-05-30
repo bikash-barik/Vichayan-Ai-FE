@@ -10,6 +10,7 @@ const Setting = ({ onClose }) => {
           loading="lazy"
           alt=""
           src="/magemultiply1.svg"
+          onClick={onClose}
         />
         <div className="self-stretch flex flex-col items-start justify-start">
           <h3 className="m-0 self-stretch relative text-inherit font-bold font-inherit">

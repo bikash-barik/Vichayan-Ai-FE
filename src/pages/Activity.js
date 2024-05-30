@@ -44,7 +44,7 @@ const Activity = () => {
         <FrameComponent2 />
         <FrameComponent1 />
       </div>
-      <main className="flex-1 rounded-xl bg-linen overflow-hidden flex flex-col items-start justify-start py-0 px-[30px] box-border min-w-[1030px] max-w-full mq1050:min-w-full">
+      <main className="flex-1 rounded-xl bg-linen overflow-hidden flex flex-col items-start justify-start py-0 px-[30px] box-border w-full max-w-full ">
         <header className="self-stretch box-border overflow-hidden flex flex-row items-center justify-between pt-[30px] px-0 pb-7 max-w-full gap-[20px] text-left text-13xl text-gray-400 font-nunito border-b-[1px] border-solid border-silver-200 mq725:flex-wrap">
           <h1 className="m-0 relative text-inherit font-bold font-inherit">
             Your Activity
@@ -71,7 +71,7 @@ const Activity = () => {
             }}
           />
         </header>
-        <section className="self-stretch flex flex-row items-start justify-center max-w-full">
+        <section className="self-stretch hide-scrollbar flex flex-row items-start justify-center max-w-full">
           <ActivityItems />
         </section>
       </main>

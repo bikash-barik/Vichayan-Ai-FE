@@ -122,7 +122,7 @@ const ChatLight = ({
           <div className="self-stretch flex flex-col items-start justify-start gap-[15px] max-w-full text-xl text-gray-400">
             <div className="self-stretch flex flex-row items-start justify-start gap-[20px] max-w-full mq750:flex-wrap">
               <div className="flex-1 flex flex-row items-start justify-start gap-[8px] min-w-[98px] max-w-full">
-                <div className="flex flex-col items-start justify-start pt-[1.5px] px-0 pb-0">
+                <div className="flex my-2 flex-col items-start justify-start pt-[1.5px] px-0 pb-0">
                   <img
                     className="w-6 h-6 relative overflow-hidden shrink-0"
                     alt=""

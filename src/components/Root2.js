@@ -15,6 +15,7 @@ const Root2 = ({ onClose }) => {
           loading="lazy"
           alt=""
           src="/magemultiply1.svg"
+          onClick={onClose}
         />
         <div className="self-stretch h-[49px] flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border gap-[16px]">
           <b className="self-stretch relative mq450:text-lgi">Add to Library</b>

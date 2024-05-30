@@ -115,7 +115,7 @@ const Libraries = () => {
   return (
     <>
       <div className="w-full relative bg-grey-base-2 overflow-hidden flex flex-row flex-wrap items-start justify-start p-[5px] box-border leading-[normal] tracking-[normal] [row-gap:20px] text-left text-base text-gray-400 font-nunito">
-        <div className="h-[1070px] w-[326px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-start p-5 box-border gap-[35px] max-w-full mq450:gap-[17px]">
+        <div className="h-full w-[326px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-start p-5 box-border gap-[35px] max-w-full mq450:gap-[17px]">
           <img
             className="w-[184px] h-[38px] relative object-contain"
             loading="lazy"
@@ -394,9 +394,9 @@ const Libraries = () => {
             </div>
           </div>
         </div>
-        <main className="h-[1070px] flex-1 rounded-xl bg-linen flex flex-col items-center justify-between py-0 px-[30px] box-border min-w-[1030px] max-w-full mq1300:h-auto mq1100:min-w-full">
+        <main className="h-[1070px] flex-1 rounded-xl bg-linen flex flex-col items-center justify-between py-0 px-[30px] box-border w-full ">
           <LibraryContent />
-          <section className="self-stretch flex flex-row flex-wrap items-center justify-start py-[27.5px] pr-1 pl-0 box-border gap-[40px] min-h-[855px] max-w-full shrink-0 text-left text-base text-gray-400 font-nunito mq800:gap-[20px]">
+          <section className="flex flex-row flex-wrap items-center justify-start py-[27.5px] pr-1 pl-0 box-border gap-[40px] max-w-full shrink-0 text-left text-base text-gray-400 font-nunito mq800:gap-[20px]">
             <div
               className="w-[350px] rounded-xl box-border flex flex-col items-center justify-center py-[73px] px-5 gap-[8px] max-w-full cursor-pointer border-[1px] border-dashed border-gray-400"
               onClick={openFrame2}

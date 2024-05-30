@@ -35,7 +35,7 @@ const TitleContainer = () => {
 
   return (
     <>
-      <section className="self-stretch box-border overflow-hidden flex flex-row items-center justify-between pt-[30px] px-0 pb-7 max-w-full gap-[20px] text-left text-13xl text-gray-400 font-nunito border-b-[1px] border-solid border-silver-200 mq750:flex-wrap">
+      <section className="w-full box-border overflow-hidden flex flex-row items-center justify-between pt-[30px] px-0 pb-7 max-w-full gap-[20px] text-left text-13xl text-gray-400 font-nunito border-b-[1px] border-solid border-silver-200 mq750:flex-wrap">
         <h1 className="m-0 relative text-inherit font-bold font-inherit mq450:text-lgi mq1050:text-7xl">
           JavaScript Hoisting
         </h1>

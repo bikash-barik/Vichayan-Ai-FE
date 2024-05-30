@@ -72,7 +72,7 @@ const ActivityItems = () => {
 
   return (
     <>
-      <div className="h-[966px] w-[838px] overflow-y-auto shrink-0 flex flex-col items-center justify-start pt-5 px-0 pb-0 box-border gap-[35px] max-w-full text-left text-5xl text-gray-400 font-nunito mq450:gap-[17px] mq725:h-auto">
+      <div className="h-[966px] w-[838px] hide-scrollbar overflow-y-auto shrink-0 flex flex-col items-center justify-start pt-5 px-0 pb-0 box-border gap-[35px] max-w-full text-left text-5xl text-gray-400 font-nunito mq450:gap-[17px] mq725:h-auto">
         <div className="self-stretch flex flex-col items-start justify-start gap-[15px] shrink-0 max-w-full">
           <div className="self-stretch rounded-xl flex flex-row items-center justify-between py-2.5 px-0 box-border gap-[20px] max-w-full mq725:flex-wrap">
             <h3 className="m-0 relative text-inherit font-semibold font-inherit inline-block max-w-full mq450:text-lgi">
@@ -207,7 +207,7 @@ const ActivityItems = () => {
             <JavascriptItems propDisplay="unset" propMinWidth="unset" />
           </div>
         </div>
-        <div className="self-stretch flex flex-col items-start justify-start gap-[15px] max-w-full shrink-0">
+        {/* <div className="self-stretch flex flex-col items-start justify-start gap-[15px] max-w-full shrink-0">
           <div className="self-stretch rounded-xl flex flex-row items-center justify-between py-2.5 px-0 box-border max-w-full gap-[20px] mq725:flex-wrap">
             <h3 className="m-0 relative text-inherit font-semibold font-inherit inline-block max-w-full mq450:text-lgi">
               Today - Wednesday, May 1, 2024
@@ -260,7 +260,7 @@ const ActivityItems = () => {
             />
             <FrameComponent />
           </div>
-        </div>
+        </div> */}
       </div>
       {isFrameOpen && (
         <PortalPopup

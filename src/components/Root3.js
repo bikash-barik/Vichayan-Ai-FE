@@ -8,7 +8,7 @@ import {
 
 const Root3 = ({ onClose }) => {
   return (
-    <div className="w-[841px] rounded-6xl bg-white overflow-hidden flex flex-col items-start justify-start p-[30px] box-border gap-[40px] leading-[normal] tracking-[normal] max-w-full max-h-full text-left text-base text-gray-400 font-nunito mq450:gap-[20px]">
+    <div className="w-[841px] rounded-6xl bg-white overflow-auto hide-scrollbar flex flex-col items-start justify-start p-[30px] box-border gap-[40px] leading-[normal] tracking-[normal] max-w-full max-h-full text-left text-base text-gray-400 font-nunito mq450:gap-[20px]">
       <header className="self-stretch flex flex-col items-end justify-start text-left text-5xl text-gray-400 font-nunito">
         <img
           className="w-6 h-6 cursor-pointer relative overflow-hidden shrink-0"

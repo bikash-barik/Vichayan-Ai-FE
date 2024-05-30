@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className="self-stretch flex flex-row items-center justify-end py-[15px] pr-2.5 pl-[874px] box-border gap-[35px] max-w-full shrink-0 text-left text-sm text-gray-300 font-nunito mq1300:flex-wrap mq1300:pl-[437px] mq1300:box-border mq450:pl-5 mq450:box-border mq800:gap-[17px] mq800:pl-[218px] mq800:box-border">
-      <div className="flex-1 flex flex-row items-start justify-between min-w-[325px] max-w-full gap-[20px] mq800:flex-wrap">
+    <div className="self-stretch flex flex-row items-center justify-end py-[15px] pr-2.5 pl-[254px] box-border gap-[35px] max-w-full shrink-0 text-left text-sm text-gray-300 font-nunito mq1300:flex-wrap mq1300:pl-[437px] mq1300:box-border mq450:pl-5 mq450:box-border mq800:gap-[17px] mq800:pl-[218px] mq800:box-border">
+      <div className="flex-1 flex flex-row items-start justify-between min-w-[225px] max-w-full gap-[20px] mq800:flex-wrap">
         <div className="relative inline-block min-w-[28px]">Plus</div>
         <div className="relative inline-block min-w-[65px]">Enterprise</div>
         <div className="relative inline-block min-w-[42px]">Career</div>

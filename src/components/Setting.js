@@ -1,9 +1,22 @@
 import { Button } from "@mui/material";
+import PortalPopup from "./PortalPopup";
+import Root from "./Root";
+import { useCallback, useState } from "react";
 
 // eslint-disable-next-line no-unused-vars
 const Setting = ({ onClose }) => {
+  const [isFrame1Open, setFrame1Open] = useState(false);
+
+  const openFrame1 = useCallback(() => {
+    setFrame1Open(true);
+  }, []);
+
+  const closeFrame1 = useCallback(() => {
+    setFrame1Open(false);
+  }, []);
+
   return (
-    <div className="w-[744px] rounded-6xl bg-white overflow-hidden flex flex-col items-end justify-start pt-[30px] px-[30px] pb-[31px] box-border gap-[30px] leading-[normal] tracking-[normal] max-w-full max-h-full mq450:gap-[15px]">
+    <div className="w-[744px] rounded-6xl bg-white overflow-auto hide-scrollbar flex flex-col items-end justify-start pt-[30px] px-[30px] pb-[31px] box-border gap-[30px] leading-[normal] tracking-[normal] max-w-full max-h-full mq450:gap-[15px]">
       <header className="self-stretch flex flex-col items-end justify-start text-left text-5xl text-gray-400 font-nunito">
         <img
           className="w-6 h-6 relative overflow-hidden shrink-0"
@@ -159,6 +172,7 @@ const Setting = ({ onClose }) => {
                   width: 104,
                   height: 49,
                 }}
+                onClick={openFrame1}
               >
                 Delete
               </Button>
@@ -166,6 +180,15 @@ const Setting = ({ onClose }) => {
           </div>
         </div>
       </section>
+      {isFrame1Open && (
+        <PortalPopup
+          overlayColor="rgba(113, 113, 113, 0.3)"
+          placement="Centered"
+          onOutsideClick={closeFrame1}
+        >
+          <Root onClose={closeFrame1} />
+        </PortalPopup>
+      )}
     </div>
   );
 };
